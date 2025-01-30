@@ -1,15 +1,12 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Add this to your index.css */
+@import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#map {
+  height: 500px;
+  width: 100%;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
