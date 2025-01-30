@@ -17,10 +17,6 @@ body {
   background-color: #f0f0f0;
 }
 
-.logomel {
-  width: 15%;
-}
-
 header {
   background-color: #E10715;
   padding: 1%;
@@ -77,20 +73,77 @@ header {
   margin-bottom: 10px;
 }
 
-footer{
-  border-top: 2px solid lightgray;
-}
-
-.lmp{
-  width: 5%;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
 .logos{
   width: 50px;
 }
 
-.réseaux{
+
+.logomel {
+  width: 15%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid lightgray;
+}
+
+.lmp {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 5%;
+}
+
+.réseaux {
   margin: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+}
+
+.search-bar button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007aff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #005bb5;
+}
+
+.citybutton {
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.citybutton:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
 }
