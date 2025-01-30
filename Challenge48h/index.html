@@ -3,11 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
   <body>
     <div id="root"></div>
+    <header>
+      <img src="src/components/logo-mel.jpg" alt="Logo MEL" class="logomel">
+    </header>
+
+    <div class="carte">
+      <img src="src/components/placeholder-carte.jpg" alt="placeholder" class="placeholder">
+    </div>
+
+    <div class="titretexte">
+      <h2>Informations disponibles</h2>
+      <p class="proches">Proche de vous :</p>
+    </div>
+
+    <div class="cartes-stations">
+      <div class="station1">
+        <h3 class="station">Station 1</h3>
+        <p class="restants">5 v'lille restants</p>
+        <p class="distance">Distance</p>
+      </div>
+
+      <div class="station1">
+        <h3 class="station">Station 3</h3>
+        <p class="restants">12 v'lille restants</p>
+        <p class="distance">Distance</p>
+      </div>
+
+      <div class="station1">
+        <h3 class="station">Station 3</h3>
+        <p class="restants">3 v'lille restants</p>
+        <p class="distance">Distance</p>
+      </div>
+    </div>
+
+    <footer>
+      <img src="src/components/logo-mel-petit.png" alt="logo-mel" class="lmp">
+      <div class="réseaux">
+        <a href="https://www.facebook.com/metropoledelille/?locale=fr_FR"><img src="src/components/logo-facebook-noir.png" alt="fb" class="logos"></a>
+        <a href="https://www.instagram.com/metropoledelille/?hl=fr"><img src="src/components/logo-instagram-noir.png" alt="insta" class="logos"></a>
+        <a href="https://x.com/MetropoleLille?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="src/components/logo-x.png" alt="x" class="logos"></a>
+        <a href="https://www.youtube.com/@metropoledelille"><img src="src/components/logo-youtube.png" alt="youtube" class="logos"></a>
+      </div>
+    </footer>
+
+
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

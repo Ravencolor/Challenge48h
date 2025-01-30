@@ -1,5 +1,11 @@
-/* Add this to your index.css */
+
 @import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 #map {
   height: 500px;
@@ -9,4 +15,82 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+}
+
+.logomel {
+  width: 15%;
+}
+
+header {
+  background-color: #E10715;
+  padding: 1%;
+}
+
+.carte {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: grey;
+}
+
+.placeholder{
+  width: 70%;
+}
+
+.titretexte {
+  padding: 20px;
+}
+
+.proches{
+  color:grey;
+  padding-top: 5px;
+}
+
+.cartes-stations{
+  display: flex;
+  padding-top: 20px;
+  padding-bottom:30px;
+}
+
+.station1{
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+}
+
+.station{
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.restants,.distance{
+  padding-left: 20px;
+}
+
+.station,.distance,.restants{
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+.distance{
+  margin-bottom: 10px;
+}
+
+footer{
+  border-top: 2px solid lightgray;
+}
+
+.lmp{
+  width: 5%;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.logos{
+  width: 50px;
+}
+
+.réseaux{
+  margin: 20px;
 }
