@@ -89,6 +89,21 @@ const App = () => {
     }
   }, [userLocation, bikeStations]);
 
+  useEffect(() => {
+    axios.get('https://data.lillemetropole.fr/geoserver/ows?SERVICE=WFS&REQUEST=GetFeature&VERSION=2.0.0&TYPENAMES=mel_mobilite_et_transport%3Asc_schema_cyclable_pm35_2023&OUTPUTFORMAT=json')
+      .then((response) => {
+        const cyclePaths = response.data.features;
+        cyclePaths.forEach((path) => {
+          const coordinates = path.geometry.coordinates;
+          const latlngs = coordinates.map(coord => [coord[1], coord[0]]);
+          L.polyline(latlngs, { color: 'blue' }).addTo(mapRef.current);
+        });
+      })
+      .catch((error) => {
+        console.error("Erreur de récupération des données de pistes cyclables", error);
+      });
+  }, []);
+
   const handleSearch = async () => {
     if (searchQuery) {
       try {

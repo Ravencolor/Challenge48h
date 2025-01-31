@@ -57,6 +57,7 @@ header {
 
 .station{
   padding-bottom: 10px;
+  padding-left: 10px;
   margin-top: 10px;
 }
 
@@ -146,4 +147,54 @@ footer {
 .citybutton:focus {
   border-color: #007aff;
   box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+  .cartes-stations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .station1 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .station {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .restants, .distance {
+    padding-left: 10px;
+  }
+
+  .station, .distance, .restants {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .logos {
+    width: 40px;
+  }
+  .search-bar {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .search-bar input[type="text"] {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .search-bar button {
+    width: 80%;
+  }
+
+  .citybutton {
+    width: 80%;
+    margin-bottom: 10px;
+  }
 }
